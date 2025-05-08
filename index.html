@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Video</title>
+  <style>
+    #videoContainer {
+      display: none; /* Ẩn video lúc đầu */
+      margin-top: 20px;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+
+<h1>xem video bẩn mắt</h1>
+
+<button onclick="xem()">xem tráng đái</button>
+
+<div id="videoContainer">
+  <video width="600" controls>
+    <source src="491482274_9519625398145704_933466163639285101_n.mp4" type="video/mp4">
+    Trình duyệt không hỗ trợ xem video.
+  </video>
+</div>
+
+<div style="text-align: center;">
+  <img src="matlon.jpg" alt="logo" width="25%">
+</div>
+
+<script>
+  function xem() {
+    document.getElementById("videoContainer").style.display = "block";
+  }
+</script>
+
+</body>
+</html>
